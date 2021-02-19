@@ -39,13 +39,12 @@ function range (start, end , step) {
     return list;
 }
 
-function sum (numeros){
-    let suma = 0;
-    for(let i = 0; i < numeros.length; i++){
-        suma += numeros[i];
+function sum(numeros){
+    suma = 0;
+    for(let values of numeros){
+        suma += values;
     }
-    return suma;
+    return suma
 }
-
 console.log(range(5,2,-3));
 console.log(sum(range(5,2,-3)));
